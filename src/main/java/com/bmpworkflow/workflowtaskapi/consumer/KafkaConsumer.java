@@ -25,7 +25,7 @@ public class KafkaConsumer {
    * 
    * @param message 受信したメッセージ
    */
-  @KafkaListener(topics = "task-events", groupId = "task-api-group")
+  @KafkaListener(topics = "task-events", groupId = "task-api-group", containerFactory = "kafkaListenerContainerFactory")
   public void listen(String message) {
     System.out.println("Received message: " + message);
 
