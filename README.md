@@ -123,6 +123,7 @@ TaskAPIは、bpmワークフロー連携のためのAPIです。このAPIは、A
    kafka-console-consumer.bat --topic task-events --from-beginning --bootstrap-server localhost:9092
    ```
 2. 送信したメッセージが表示されることを確認します。
+3. 作成したM_TASKテーブルにレコードが登録されていることを確認します。
 
 ## 注意事項
 - ZookeeperとKafkaはそれぞれ別のコマンドプロンプトで実行してください。
