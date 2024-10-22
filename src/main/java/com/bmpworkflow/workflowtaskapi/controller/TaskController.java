@@ -17,7 +17,7 @@ import java.util.List;
 public class TaskController {
 
   @Autowired
-  private TaskService taskService; // TaskServiceをインジェクション
+  private TaskService taskService;
 
   @GetMapping("/tasks")
   public List<Task> getTasks() {

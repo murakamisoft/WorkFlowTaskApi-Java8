@@ -24,7 +24,7 @@ public class WorkflowTaskApiApplication {
   }
 
   /**
-   * RestTemplateのBean定義です。このBeanを他のクラスでDI（依存性注入）して使用できます。
+   * RestTemplateのBean定義。
    *
    * @return 新しいRestTemplateインスタンス
    */

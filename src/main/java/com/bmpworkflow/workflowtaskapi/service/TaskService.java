@@ -8,11 +8,11 @@ import com.bmpworkflow.workflowtaskapi.model.Task;
 
 import java.util.List;
 
-@Service // サービスクラスであることを示す
+@Service
 public class TaskService {
 
   @Autowired
-  private TaskMapper taskMapper; // タスクマッパーのインジェクション
+  private TaskMapper taskMapper;
 
   // すべてのタスクを取得するメソッド
   public List<Task> getAllTasks() {

@@ -59,10 +59,8 @@ public class KafkaConsumer {
         case "DELETE":
           restTemplate.delete(apiUrl + "/" + taskMessage.getParams().getTaskId());
           break;
-        // 他のHTTPメソッドに対する処理を追加することもできます
       }
     } catch (JsonProcessingException e) {
-      // JSON処理エラー時のログ出力
       e.printStackTrace();
     }
   }
